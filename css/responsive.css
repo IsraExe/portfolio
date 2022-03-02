@@ -1,0 +1,301 @@
+@media (max-width:1025px) {
+    /* header */
+    header {
+        padding-right: 0px;
+        padding-left: 120px;
+        justify-content: none;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header nav ul {
+        width: 450px;
+    }
+
+    header nav ul li {
+        margin-right: -35px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+    /* Geral */
+    section {
+        padding: 10px 120px;
+    }
+
+    /* Apresentação */
+    #apresentacao .foto-perfil > img {
+        width: 230px;
+        height: 230px;
+    }
+
+    #apresentacao > div > div > .principais-titulos {
+        font-size: 22px;
+    }
+
+    #apresentacao > div > div > p{
+        font-size: 18px;
+        position: relative;
+        top: -10px;
+    }
+    
+    #apresentacao ul li {
+        position: relative;
+        top: -10px;
+    }
+
+    /* Formação */
+    #formacao p, #formacao span {
+        text-align: center;
+    }
+
+    #formacao ul li {
+        border: 0;
+    }
+
+    /* Projetos */
+
+    #projetos {
+        padding: 10px 30px;
+    }
+
+    iframe {
+        height: 450px;
+    }
+
+    /* Contato */
+
+    #contato {
+        padding: 0 120px;
+    }
+    #contato .img-contato img {
+        width: 200px;
+        margin-left: -20px;
+    }
+}
+
+
+@media (max-width:801px) {
+    /* Header */
+    header {
+        padding-left: 70px;
+    }
+
+    header h1 {
+        font-size: 19px;
+    }
+
+    /* Geral */
+    section {
+        padding: 10px 70px;
+    }
+
+    /* Apresentação */
+    #apresentacao {
+        margin-top: 20px;
+    }
+
+    #apresentacao > div > div > .principais-titulos {
+        font-size: 20px;
+    }
+
+    #apresentacao > div > div > p{
+        font-size: 16px;
+    }
+
+    #apresentacao ul li {
+        font-size: 16px;
+    }
+
+    /* Sobre */
+    #sobre {
+        margin-top: 20px;
+    }
+
+    #apresentacao .foto-perfil > img {
+        width: 190px;
+        height: 190px;
+    }
+    /* Contato */
+    #contato .img-contato {
+        display: none;
+    }
+
+}
+
+@media (max-width:600px) {
+    /* Header*/
+    header {
+        justify-content: center;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+    header nav ul {
+        display: none;
+    }
+
+    /* Apresentacao */
+
+    #apresentacao > .foto-sobre {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    #apresentacao > .foto-sobre > .foto-perfil {
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    /* Projetos */
+    #projetos div {
+        display: block;
+    }
+
+    #projetos iframe {
+        width: 100%;
+    }
+
+    /* Contato */
+    #contato {
+        padding: 10px 60px;
+    }
+
+    /* Skills */
+
+    #skills ul {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: auto auto;
+        grid-gap: 15px .2rem;
+    }
+
+    #skills ul .d-generics:nth-child(4) {
+        grid-column: 1 / 2;
+        width: 200%;
+    }
+
+    #skills ul .d-generics:nth-child(5) {
+        grid-column: 2 / 3;
+        width: 200%;
+    }
+
+    /* Hobbies */
+
+    #hobbies ul {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: auto auto;
+        grid-gap: 15px .2rem;
+    }
+
+    #hobbies ul .d-generics:nth-child(4) {
+        grid-column: 1 / 2;
+        width: 200%;
+    }
+
+    #hobbies ul .d-generics:nth-child(5) {
+        grid-column: 2 / 3;
+        width: 200%;
+    }
+
+    /* Formaçao */
+    #formacao ul li {
+        font-size: 14px;
+    }
+    #formacao ul li img {
+        width: 80px;
+    }
+
+}
+
+@media (max-width:490px) {
+    /* Geral */
+    section {
+        padding: 10px 40px;
+    }
+
+    /* Formação */
+    #formacao ul {
+        /* background: red; */
+        flex-direction: column;
+        height: 450px;
+    }
+
+    #formacao ul li {
+        font-size: 12px;
+        /* background: pink; */
+    }
+    #formacao ul li img {
+        height: 70px;
+    }
+
+    /* Projetos */
+
+    #projetos {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width:380px) {
+    /* Apresentação */
+    
+    #apresentacao {
+        margin-top: 0;
+    }
+
+    #apresentacao .foto-perfil {
+        margin-bottom: 3px;
+    }
+    #apresentacao .foto-perfil > img {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    #apresentacao > .foto-sobre > .texto-inicial {
+        font-size: 2px;
+        width: 270px;
+        padding: 0 10px;
+    }
+
+    #apresentacao > .foto-sobre > .texto-inicial > p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #apresentacao > .foto-sobre > .texto-inicial > h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #apresentacao > .foto-sobre > .texto-inicial > ul {
+        padding: 0 10px;
+    }
+
+    #apresentacao > .foto-sobre > .texto-inicial > ul > li > a {
+        font-size: 14px;
+    }
+
+    /* Contato */
+    #contato form input[type=submit] {
+        width: 90px;
+        height: 40px;
+        transform: rotate(0deg);
+        font-size: 16px;
+    }
+
+    #contato form input[type=submit]:hover {
+        background-color: #c9981e;
+    }
+
+    #contato form input[type=submit]:active {
+        background-color: #8d680b;
+    }
+}

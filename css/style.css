@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Rubik', sans-serif;
+    border: 0;
+}
+
+/* Menu inicial */
+
+header {
+    background-color: rgb(24, 24, 48);
+    background: darkgoldenrod;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+h1 {
+    color: white;
+    align-self: center;
+    position: relative;
+    bottom: 4px;
+}
+
+nav {
+    display: flex;
+    align-self: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    width: 560px;
+    height: 25px;
+}
+
+header nav ul li {
+    display: flex;
+    font-size: 1.2em;
+    width: 110px;
+    margin-right: -15px;
+    justify-content: center;
+}
+
+header nav ul li a {
+    color: white;
+    align-self: center;
+}
+
+header nav ul li a:hover {
+    font-size: 20px;
+}
+
+/* Geral */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 10px 150px;
+    /* background-color: aqua; */
+    z-index: -1;
+}
+
+.principais-titulos {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+}
+
+/* Apresentação */
+
+.foto-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-perfil img {
+    display: flex;
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    object-fit: cover;
+    object-position: 0px -30px;
+    border: solid 1px darkgoldenrod;
+}
+
+
+#apresentacao > .foto-sobre > .texto-inicial {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+#apresentacao > div > div > p{
+    font-size: 25px;
+}
+
+#apresentacao > div > div > .principais-titulos {
+    font-size: 32px;
+}
+
+#apresentacao ul {
+    margin-top: 20px;
+}
+
+#apresentacao ul li {
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+#apresentacao ul li a {
+    color: black;
+}
+
+/* Sobre */
+
+#sobre {
+    background: rgba(199, 146, 11, 0.74);
+}
+
+#sobre p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Skills */
+
+#skills ul {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+#skills ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#skills ul li p {  
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#skills ul li img {
+    height: 70px;
+    align-self: center;
+    margin: auto 0;
+}
+
+
+/* Hobbies */
+
+/* #hobbies {
+    background: rgba(199, 146, 11, 0.74);
+} */
+
+#hobbies ul {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+#hobbies ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hobbies ul li p {  
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#hobbies ul li img {
+    height: 70px;
+    align-self: center;
+    margin: auto 0;
+}
+
+/* Formação */
+
+#formacao ul {
+    height: 250px;
+}
+
+#formacao ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+    align-items: center;
+    font-weight: 500;
+    border: 2px solid #b8860b;
+    border-radius: 10px 70px 40px 20px;
+    padding: 10px;
+    /* margin-top: 10px; */
+}
+
+#formacao ul li img {
+    width: 120px;
+    align-self: center;
+    margin: auto 0;
+}
+
+/* Projetos */
+
+#projetos {
+    background: rgba(199, 146, 11, 0.74);
+}
+
+#projetos div {
+    display: flex;
+    background: rgb(230, 223, 223);
+}
+
+
+/* Contato */
+
+#contato {
+    margin-top: 10px;
+    display: flex;
+    /* background: rgba(199, 146, 11, 0.74); */
+}
+
+#contato .img-contato {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto auto;
+}
+
+#contato .img-contato img {
+    margin: 0 auto;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato .div-form .principais-titulos {
+    margin-bottom: 10px;
+}
+
+#contato .div-form p {
+    margin-bottom: 10px;
+}
+
+#contato .div-form form label {
+    font-weight: 600;
+} 
+
+/* #contato form input, textarea, label {
+    align-self: center;
+} */
+
+#contato form input, textarea {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+#contato form textarea {
+    height: 140px ;
+}
+
+#contato form input[type=submit] {
+    width: 180px;
+    height: 50px;
+    align-self: center;
+    background: darkgoldenrod;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: rotate(-2deg);
+}
+
+#contato form input[type=submit]:hover {
+    transform: rotate(0deg);
+}
+
+/* Rodapé */
+
+footer {
+    background: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    border-top: solid;
+    padding: 5px 0;
+    height: 80px;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0 auto;
+    font-size: 15px;
+    /* font-weight: ; */
+}
+
