@@ -67,10 +67,8 @@ main {
 
 section {
     width: 100%;
-    margin: 0 auto;
     margin-top: 60px;
     padding: 10px 150px;
-    /* background-color: aqua; */
     z-index: -1;
 }
 
@@ -87,7 +85,6 @@ ul {
 
 .foto-sobre {
     display: flex;
-    justify-content: space-between;
 }
 
 .foto-perfil img {
@@ -97,7 +94,7 @@ ul {
     height: 300px;
     border-radius: 500px;
     object-fit: cover;
-    object-position: 0px -30px;
+    object-position: 0px -0px;
     border: solid 1px darkgoldenrod;
 }
 
@@ -144,18 +141,21 @@ ul {
 /* Skills */
 
 #skills ul {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
-
 #skills ul li {
+    list-style: none;
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 20%;
 }
 
-#skills ul li p {  
+#skills ul li p { 
     margin-top: 10px;
     font-weight: 500;
 }
@@ -166,12 +166,7 @@ ul {
     margin: auto 0;
 }
 
-
 /* Hobbies */
-
-/* #hobbies {
-    background: rgba(199, 146, 11, 0.74);
-} */
 
 #hobbies ul {
     display: grid;
@@ -211,7 +206,6 @@ ul {
     border: 2px solid #b8860b;
     border-radius: 10px 70px 40px 20px;
     padding: 10px;
-    /* margin-top: 10px; */
 }
 
 #formacao ul li img {
@@ -224,20 +218,60 @@ ul {
 
 #projetos {
     background: rgba(199, 146, 11, 0.74);
-}
-
-#projetos div {
     display: flex;
-    background: rgb(230, 223, 223);
+    flex-direction: column;
+    align-items: center;
 }
 
+#projetos .conter-img {
+    width: 80vw;   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projetos .conter-img figure {
+    width: 80%;
+}
+
+#projetos .conter-img figure img {
+    width: 100%;
+}
+
+#projetos .conter-img .info-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+}
+
+#projetos .conter-img .info-projeto button {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1.01em;
+    font-weight: 600;
+    background: darkgoldenrod;
+    box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+#projetos .conter-img .info-projeto button:hover {
+    background: rgb(153, 127, 61);
+}
+
+#projetos .conter-img .info-projeto button:active {
+    background: rgb(175, 138, 44);
+}
 
 /* Contato */
 
 #contato {
     margin-top: 10px;
     display: flex;
-    /* background: rgba(199, 146, 11, 0.74); */
 }
 
 #contato .img-contato {
@@ -266,16 +300,13 @@ ul {
 
 #contato .div-form form label {
     font-weight: 600;
+    margin-top: 10px;
 } 
-
-/* #contato form input, textarea, label {
-    align-self: center;
-} */
 
 #contato form input, textarea {
     width: 100%;
     height: 30px;
-    margin: 10px 0;
+    margin-top: 10px;
     border: 1.5px solid black;
     border-radius: 5px;
 }
@@ -299,6 +330,19 @@ ul {
     transform: rotate(0deg);
 }
 
+#contato .span-error {
+    display: none;
+    color: red;
+}
+
+#contato .span-msg-enviada {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    color: green;
+    font-size: 1.2rem;
+}
+
 /* Rodapé */
 
 footer {
@@ -314,6 +358,5 @@ footer {
 footer p {
     margin: 0 auto;
     font-size: 15px;
-    /* font-weight: ; */
 }
 

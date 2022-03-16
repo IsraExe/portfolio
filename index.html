@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Portfólio - Israel de Araújo</title>
+
+    <script src="js/validacaoformulario.js" defer></script>
 </head>
 <body>
 
@@ -38,7 +40,7 @@
                     </ul>
                 </div>
                 <div class="foto-perfil">
-                    <img src="assets/novafoto.jpeg" alt="" width="200" height="350">
+                    <img src="assets/avatar.svg" alt="" width="200" height="350">
                 </div>
             </div>
             
@@ -59,39 +61,30 @@
         </section>
 
         <!-- SKILLS -->
+
         <section id="skills">
             <h2 class="principais-titulos">Skills</h2>
             <ul>
-                <div class="d-generic">
                     <li>  
                         <img src="assets/logohtml.svg" alt=""> 
                         <p>HTML5</p>
                     </li>
-                </div>
-                <div class="d-generic">
                     <li>
                         <img src="assets/logocss.svg" alt="">
                         <p>CSS</p>
                     </li>
-                </div>
-                <div class="d-generic">
                     <li>
                         <img src="assets/logojavascript.svg" alt="">
                         <p>Javascript</p>
                     </li>
-                </div>
-                <div class="d-generics">
                     <li>
                         <img src="assets/logomysql.svg" alt="">
                         <p>MySQL</p>
                     </li>
-                </div>
-                <div class="d-generics">
                     <li>
                         <img src="assets/logojava.svg" alt="">
                         <p>Java</p>
                     </li>
-                </div>
             </ul>
         </section>
         <!-- SKILLS -->
@@ -156,19 +149,43 @@
             </ul>
         </section>
         <!-- FORMAÇÃO -->
-
+        
+        <!-- PROJETOS -->
         <section id="projetos">
             <h2 class="principais-titulos">Experiência Profissional</h2>
-            <div>
+
+            <div class="conter-img">
+                <figure>
+                    <img src="./assets/challengeimg.png" alt="">
+                </figure>
+                <div class="info-projeto">
+                    <p> <b>Decodificador de Texto</b> </p>
+                    <!-- <p>Criptografe e descriptografe mensagens</p> -->
+                    <a href="https://israexe.github.io/criptografiachallenge/" target="_blank"><button>Ver site</button></a>
+                </div>
+            </div>
+
+            <div class="conter-img">
+                <div class="info-projeto">
+                    <p> <b>Chat Virtual</b> </p>
+                    <!-- <p>Criptografe e descriptografe mensagens</p> -->
+                    <a href="https://aluracord-matrix-israexe.vercel.app/" target="_blank"><button>Ver site</button></a>
+                </div>
+                <figure>
+                    <img src="./assets/chataluracordimg.png" alt="">
+                </figure>
+            </div>
+            <!-- <div>
                 <iframe class="oioi" src="https://israexe.github.io/criptografiachallenge/" width="50%" height="500"></iframe>
                 <iframe src="https://aluracord-matrix-israexe.vercel.app/" width="50%" height="500" frameborder="0"></iframe>
-            </div>
+            </div> -->
             
         </section>
+        <!-- PROJETOS -->
 
+        <!-- CONTATO -->
         <section id="contato">
             <div class="img-contato">
-                <!-- <img src="assets/pen-and-paper-svgrepo-com.svg" alt=""> -->
                 <img src="assets/mail-142.svg" alt="">
             </div>
 
@@ -176,20 +193,27 @@
                 <h2 class="principais-titulos">Contato</h2>
                 <p>Quer entrar em contato comigo? Preencha as informações abaixo!</p>
 
-                <form action="">
+                <form action="" id="form-contato">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" class="pega-input-js">
+                    <span class="span-error">Preencha este campo!</span>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" class="pega-input-js">
+                    <span class="span-error">Preencha este campo!</span>
                     <label for="assunto">Assunto</label>
-                    <input type="text" id="assunto" name="assunto">
+                    <input type="text" id="assunto" name="assunto" class="pega-input-js">
+                    <span class="span-error">Preencha este campo!</span>
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                    <input type="submit" id="btn-enviar" value="Enviar!">
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="pega-input-js"></textarea>
+                    <span class="span-error">Preencha este campo!</span>
+                    <input type="submit" id="btn-enviar" form="form-contato" value="Enviar!">
+                    <span class="span-msg-enviada">Mensagem enviada com sucesso!</span>
                 </form>
 
             </div>
         </section>
+        <!-- CONTATO -->
+        
     </main>
 
     <footer>
