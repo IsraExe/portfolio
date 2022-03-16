@@ -167,6 +167,35 @@ ul {
 /* Hobbies */
 
 #hobbies ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#hobbies ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+
+#hobbies ul li p { 
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#hobbies ul li img {
+    height: 70px;
+    align-self: center;
+    margin: auto 0;
+}
+
+
+
+
+/* #hobbies ul {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
@@ -187,7 +216,7 @@ ul {
     height: 70px;
     align-self: center;
     margin: auto 0;
-}
+} */
 
 /* Formação */
 
@@ -321,11 +350,16 @@ ul {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    transition: all ease-in 0.1s;
     transform: rotate(-2deg);
 }
 
 #contato form input[type=submit]:hover {
     transform: rotate(0deg);
+}
+
+#contato form input[type=submit]:active {
+    transform: rotate(2deg);
 }
 
 #contato .span-error {
@@ -358,3 +392,9 @@ footer p {
     font-size: 15px;
 }
 
+/* TESTES */
+
+.style-hover:hover {
+    transition: all ease-in 0.1s;
+    transform: rotate(-2deg);
+}

@@ -8,6 +8,7 @@
     <title>Portfólio - Israel de Araújo</title>
 
     <script src="js/validacaoformulario.js" defer></script>
+    <script src="js/animacao-de-texto.js" defer></script>
 </head>
 <body>
 
@@ -26,12 +27,12 @@
     </header>
 
     <main>
-
+        <!-- APRESENTAÇÃO -->
         <section id="apresentacao">
-
             <div class="foto-sobre">
                 <div class="texto-inicial">        
-                    <h2 class="principais-titulos">Olá, me chamo Israel e sou desenvolvedor web!</h2> <br>
+                    <h2 class="principais-titulos" id="titulo-animado"></h2> <br>
+                    <!-- Olá, me chamo Israel e sou desenvolvedor web! -->
                     <p>Atuo como programador full stack e tenho a habilidade de desenvolver sites responsivos e intuitivos.</p>
                     <ul>
                         <li><a href="https://github.com/IsraExe" target="_blank">Github  <img src="assets/setainclinada.svg" alt=""></a></li>
@@ -42,46 +43,44 @@
                 <div class="foto-perfil">
                     <img src="assets/avatar.svg" alt="" width="200" height="350">
                 </div>
-            </div>
-            
+            </div>  
         </section>
+        <!-- APRESENTAÇÃO -->
 
+        <!-- SOBRE -->
         <section id="sobre">
             <h2 class="principais-titulos">Sobre Mim</h2>
-            <p>Apaixonado por fazer acontecer, decidi trabalhar com desenvolvimento de sites. Com grande empenho e paixão, trabalho 
-                desenvolvendo sites web.
-                Tenho a habilidade de construir sites responsivos e intuitivos, de acordo com a demanda. 
+            <p>Apaixonado por fazer acontecer, decidi trabalhar com desenvolvimento de sites. Com grande empenho e paixão, tenho a habilidade de construir sites responsivos e intuitivos, de acordo com a demanda. 
             </p>
-            <p>Embora o estilo 'rock indie', meu estilo de música preferido é eletrônica, mais precisamente house.</p>
-            <p>
+            <p>Sou bastante eclético, mas meu tipo de música preferido é eletrônica, mais precisamente house.
                 Meus maiores hobbies são assistir séries e filmes, ouvir músicas e fazer trilhas. Apreciar a natureza é uma de minhas coisas favoritas. 
                 Gosto de me envolver em causas ambientais e sou entusiasta do mercado financeiro.  
             </p>
             <img src="assets/assinatura.svg" alt="minha assinatura"> 
         </section>
+        <!-- SOBRE -->
 
         <!-- SKILLS -->
-
         <section id="skills">
             <h2 class="principais-titulos">Skills</h2>
             <ul>
-                    <li>  
-                        <img src="assets/logohtml.svg" alt=""> 
-                        <p>HTML5</p>
-                    </li>
-                    <li>
+                    <li class="style-hover">  
+                        <img src="assets/logohtml.svg" alt="" id="skills-img-focus"> 
+                        <p class="skills-p-focus">HTML5</p>
+                    </li class="style-hover">
+                    <li class="style-hover">
                         <img src="assets/logocss.svg" alt="">
                         <p>CSS</p>
                     </li>
-                    <li>
+                    <li class="style-hover">
                         <img src="assets/logojavascript.svg" alt="">
                         <p>Javascript</p>
                     </li>
-                    <li>
+                    <li class="style-hover">
                         <img src="assets/logomysql.svg" alt="">
                         <p>MySQL</p>
                     </li>
-                    <li>
+                    <li class="style-hover">
                         <img src="assets/logojava.svg" alt="">
                         <p>Java</p>
                     </li>
@@ -93,36 +92,30 @@
         <section id="hobbies">
             <h2 class="principais-titulos">Hobbies</h2>
             <ul>
-                <div class="d-generic">
-                    <li>  
-                        <img src="assets/hobbiesassistir.svg" alt="">
-                        <p>Assistir séries</p>
-                    </li>
-                </div>
-                <div class="d-generic">
-                    <li>
-                        <img src="assets/hobbiestrilhas.svg" alt="">
-                        <p>trilhas</p>
-                    </li>
-                </div>
-                <div class="d-generic">
-                    <li>
-                        <img src="assets/hobbiesmusicas.svg" alt="">
-                        <p>Ouvir músicas</p>
-                    </li>
-                </div>
-                <div class="d-generics">
-                    <li>
-                        <img src="assets/hobbiesmeditacao.svg" alt="">
-                        <p>Meditação</p>
-                    </li>
-                </div>
-                <div class="d-generics">
-                    <li>
-                        <img src="assets/hobbiesviagens.svg" alt="">
-                        <p>Viagens</p>
-                    </li>
-                </div>
+                <li class="style-hover">  
+                    <img src="assets/hobbiesassistir.svg" alt="">
+                    <p>Assistir séries</p>
+                </li>
+                     
+                <li class="style-hover">
+                    <img src="assets/hobbiestrilhas.svg" alt="">
+                    <p>trilhas</p>
+                </li>
+                   
+                <li class="style-hover">
+                    <img src="assets/hobbiesmusicas.svg" alt="">
+                    <p>Ouvir músicas</p>
+                </li>
+                       
+                <li class="style-hover">
+                    <img src="assets/hobbiesmeditacao.svg" alt="">
+                    <p>Meditação</p>
+                </li>
+
+                <li class="style-hover">
+                    <img src="assets/hobbiesviagens.svg" alt="">
+                    <p>Viagens</p>
+                </li>     
             </ul>
         </section>
         <!-- HOBBIES -->
@@ -160,7 +153,6 @@
                 </figure>
                 <div class="info-projeto">
                     <p> <b>Decodificador de Texto</b> </p>
-                    <!-- <p>Criptografe e descriptografe mensagens</p> -->
                     <a href="https://israexe.github.io/criptografiachallenge/" target="_blank"><button>Ver site</button></a>
                 </div>
             </div>
@@ -168,18 +160,12 @@
             <div class="conter-img">
                 <div class="info-projeto">
                     <p> <b>Chat Virtual</b> </p>
-                    <!-- <p>Criptografe e descriptografe mensagens</p> -->
                     <a href="https://aluracord-matrix-israexe.vercel.app/" target="_blank"><button>Ver site</button></a>
                 </div>
                 <figure>
                     <img src="./assets/chataluracordimg.png" alt="">
                 </figure>
             </div>
-            <!-- <div>
-                <iframe class="oioi" src="https://israexe.github.io/criptografiachallenge/" width="50%" height="500"></iframe>
-                <iframe src="https://aluracord-matrix-israexe.vercel.app/" width="50%" height="500" frameborder="0"></iframe>
-            </div> -->
-            
         </section>
         <!-- PROJETOS -->
 
@@ -216,10 +202,12 @@
         
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
         <p> Desenvolvido Por Israel de Araújo</p>
         <p>2022</p>
     </footer>
+    <!-- RODAPÉ -->
 
 
 </body>
