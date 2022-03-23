@@ -33,7 +33,7 @@
                 <div class="texto-inicial">        
                     <h2 class="principais-titulos" id="titulo-animado"></h2> <br>
                     <!-- Olá, me chamo Israel e sou desenvolvedor web! -->
-                    <p>Atuo como programador full stack e tenho a habilidade de desenvolver sites responsivos e intuitivos.</p>
+                    <p>Atuo como programador front-end e tenho a habilidade de desenvolver sites responsivos e intuitivos.</p>
                     <ul>
                         <li><a href="https://github.com/IsraExe" target="_blank">Github  <img src="assets/setainclinada.svg" alt=""></a></li>
                         <li><a href="https://www.linkedin.com/in/isra-pimentel/" target="_blank">Linkedin  <img src="assets/setainclinada.svg" alt=""></a></li>
@@ -179,7 +179,7 @@
                 <h2 class="principais-titulos">Contato</h2>
                 <p>Quer entrar em contato comigo? Preencha as informações abaixo!</p>
 
-                <form action="" id="form-contato">
+                <form action="https://formsubmit.co/contatoisranode@gmail.com" method="POST" id="form-contato">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" class="pega-input-js">
                     <span class="span-error">Preencha este campo!</span>
@@ -192,6 +192,8 @@
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="pega-input-js"></textarea>
                     <span class="span-error">Preencha este campo!</span>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://israexe.github.io/portfolio/">
                     <input type="submit" id="btn-enviar" form="form-contato" value="Enviar!">
                     <span class="span-msg-enviada">Mensagem enviada com sucesso!</span>
                 </form>

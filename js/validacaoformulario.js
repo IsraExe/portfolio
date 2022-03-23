@@ -1,11 +1,10 @@
-let form = document.querySelector('#form-contato')
-let botaoEnviar =  document.querySelector('#btn-enviar')
-let spanMsgEnviada = document.querySelector('.span-msg-enviada')
+const form = document.querySelector('#form-contato')
+const botaoEnviar =  document.querySelector('#btn-enviar')
+const spanMsgEnviada = document.querySelector('.span-msg-enviada')
 let formCorreto = true
 
 botaoEnviar.addEventListener('click', () => {
-    event.preventDefault()
-    let todosOsCampos = document.querySelectorAll('.pega-input-js') 
+    const todosOsCampos = document.querySelectorAll('.pega-input-js') 
     formCorreto = true
 
     for (i = 0; i < todosOsCampos.length; i++) {
@@ -29,7 +28,8 @@ botaoEnviar.addEventListener('click', () => {
 
     if (formCorreto) {
         spanMsgEnviada.style.display = 'block'
-        form.reset()
+    } else {
+        event.preventDefault()
     }
 
 })
